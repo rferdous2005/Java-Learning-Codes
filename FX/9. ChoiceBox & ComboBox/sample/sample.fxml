@@ -1,0 +1,112 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ChoiceBox?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" vgap="20" hgap="20">
+
+    <Button text="This is a button" GridPane.rowIndex="0" GridPane.columnIndex="0" wrapText="true">
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/media/Movie24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Label text="label Wrap Text Example" GridPane.rowIndex="0" GridPane.columnIndex="1"  wrapText="true">
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/general/Print24.gif"/>
+            </ImageView>
+        </graphic>
+    </Label>
+
+    <fx:define>
+        <ToggleGroup fx:id="colorToggleGroup"/>
+    </fx:define>
+
+    <VBox GridPane.rowIndex="2" GridPane.columnIndex="0">
+        <RadioButton text="red" toggleGroup="$colorToggleGroup"/>
+        <RadioButton text="green" toggleGroup="$colorToggleGroup"/>
+        <RadioButton text="blue" toggleGroup="$colorToggleGroup"/>
+    </VBox>
+    <VBox GridPane.rowIndex="2" GridPane.columnIndex="1">
+        <CheckBox text="Politics"/>
+        <CheckBox text="History"/>
+        <CheckBox text="Arts"/>
+        <CheckBox text="Engineering"/>
+    </VBox>
+
+    <HBox GridPane.rowIndex="2" GridPane.columnIndex="3">
+        <ToggleButton text="Yes"/>
+        <ToggleButton text="No"/>
+        <ToggleButton text="Very Good"/>
+    </HBox>
+
+    <TextField GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+
+    <PasswordField GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <ComboBox GridPane.rowIndex="4" GridPane.columnIndex="0" editable="true">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Option 1"/>
+                <String fx:value="Option 2"/>
+                <String fx:value="Option 3"/>
+                <String fx:value="Option 4"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Option 3"/>
+        </value>
+
+    </ComboBox>
+
+    <ChoiceBox GridPane.rowIndex="4" GridPane.columnIndex="1" >
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Choice 1"/>
+                <String fx:value="Choice 2"/>
+                <String fx:value="Choice 3"/>
+                <String fx:value="Choice 4"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Choice 3"/>
+        </value>
+    </ChoiceBox>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</GridPane>

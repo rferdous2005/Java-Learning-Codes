@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<VBox stylesheets="@Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="urlField" onKeyReleased="#keyCheck">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+
+      <WebView fx:id="webSpace" prefWidth="900.0" />
+
+       
+   </children>
+</VBox>

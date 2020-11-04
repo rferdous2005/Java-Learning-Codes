@@ -1,0 +1,8 @@
+#bt4 {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+#webSpace {
+    -fx-border: 3px 3px;
+}

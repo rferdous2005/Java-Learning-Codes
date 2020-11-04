@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TilePane hgap="20" prefHeight="70.0" prefWidth="425.0" stylesheets="@Style.css" vgap="20" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <Label fx:id="allItems" prefWidth="200">
+
+    </Label>
+
+    <TextField fx:id="itemName" onKeyReleased="#keyRealeased" prefWidth="100" />
+
+    <Button fx:id="btn1" onMouseEntered="#onTransformEntered" onMouseExited="#onTransformExit" text="Transform Size">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+
+    <Button fx:id="btn2" onAction="#onAddButtonClicked" text="Freeze UI" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</TilePane>
